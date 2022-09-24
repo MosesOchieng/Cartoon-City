@@ -53,7 +53,7 @@ session_start();
               <li><a href="#companies">Job Sites </a></li>
               <li><a href="#details">About</a></li>
               <li><a href="#prof">Professionals</a></li>
-              <li><a href="main/database/html/pages/login.php">Jua Kali.</a></li>
+              <li><a href="#database/manlogin.php">Jua Kali.</a></li>
             </ul>
 
             <a

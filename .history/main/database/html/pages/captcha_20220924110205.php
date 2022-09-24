@@ -26,7 +26,7 @@ echo "User registration form with captcha validation has been successfully saved
 }
 }$row= mysqli_num_rows($result);
 if($row < 1)
-{}
+{
 $token = md5($_POST['email']).rand(10,9999);
 mysqli_query($conn, "INSERT INTO planBdb(name, email, email_verification_link ,password) VALUES('" . $_POST['name'] . "', '" . $_POST['email'] . "', '" . $token . "', '" . md5($_POST['password']) . "')");
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
@@ -65,4 +65,3 @@ try {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 }
-?>
