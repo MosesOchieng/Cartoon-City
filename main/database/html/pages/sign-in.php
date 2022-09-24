@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "public/lampp database/connection.php.php";
+require_once "public/lampp/connection.php";
 if(isset($_SESSION['id'])!="") {
     header("Location: ../pages/html/database/main/dashboard/template/index.html");
 }
@@ -97,7 +97,7 @@ $error_message = "Incorrect Email or Password!!!";
                                 <h2 class="h4">Plan B -  Sign In</h2>  
                             </div>
                             <div class="card-body">
-                                <form action="#" class="mt-4">
+                                <form action="public/lampp/redirect.php" class="mt-4" method="POST">
                                     <!-- Form -->
                                     <div class="form-group">
                                         <label for="exampleInputIcon3">Your email</label>
@@ -169,7 +169,7 @@ $error_message = "Incorrect Email or Password!!!";
                                 <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
                                     <span class="font-weight-normal">
                                         Not registered?
-                                        <a href="sign-up.html" class="font-weight-bold">Create account</a>
+                                        <a href="sign-up.php" class="font-weight-bold">Create account</a>
                                     </span>
                                 </div>
                             </div>

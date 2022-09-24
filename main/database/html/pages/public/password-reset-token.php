@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['password-reset-token']) && $_POST['email'])
 {
-    include "lampp database/connection.php";
+    include "lampp/connection.php";
      
     $emailId = $_POST['email'];
  

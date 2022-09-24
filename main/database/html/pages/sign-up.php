@@ -1,8 +1,8 @@
 <?php
 session_start();
-require_once "public/lampp database/connection.php";
+require_once ("public/lampp/connection.php");
 if(isset($_SESSION['id'])!="") {
-header("Location:public/lampp database/redirect.php");
+    header("Location:public/lampp/redirect.php");
 }
 if (isset($_POST['signup'])) {
 
@@ -119,7 +119,9 @@ mysqli_close($conn);
                                                 Jua Kali Artisan<a href="#"></a>
                                             </label>
                                         </div>
+                                        
                                      <div class="g-recaptcha" data-sitekey="6Ldv9yQiAAAAADhMsCPg9MalhhXHLIXrDoKGa9eO"></div>
+                                     <br>
                                     <div class="new">
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
@@ -148,7 +150,7 @@ mysqli_close($conn);
                                 <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
                                     <span class="font-weight-normal">
                                         Already have an account?
-                                        <a href="sign-in.html" class="font-weight-bold">Login here</a>
+                                        <a href="sign-in.php" class="font-weight-bold">Login here</a>
                                     </span>
                                 </div>
                             </div>
@@ -181,5 +183,4 @@ mysqli_close($conn);
 <!-- Neumorphism JS -->
 <script src="../../assets/js/neumorphism.js"></script>
 </body>
-
 </html>
