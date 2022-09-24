@@ -1,32 +1,20 @@
 {
-    "name": "neumorphism-ui",
+    "name": "moses ochieng",
     "version": "1.0.0",
-    "description": "Neumorphism inspired premium Bootstrap UI Kit featuring over 100 components and 5 example pages.",
+    "description.":"software application",
     "main": "gulpfile.js",
-    "author": "Themesberg",
+    "author": "moses ochieng",
     "keywords": [
-        "neumorphism",
-        "neumorphic",
-        "neomorphism",
-        "neomorphic",
-        "neumorph",
-        "neumorphism css",
-        "neumorphism bootstrap",
-        "neumorphism js",
-        "neumorphism design",
-        "neumorphism ui",
-        "Neumorphism UI",
-        "themesberg",
         "gulp",
         "sass",
         "html",
         "js"
     ],
-    "homepage": "https://themesberg.com/product/ui-kits/neumorphism-ui",
+    "homepage": "index.html",
     "bugs": {
-        "url": "https://github.com/themesberg/neumorphism-ui"
+        "url": ""
     },
-    "license": "https://www.themesberg.com/licensing#mit",
+    "license": "",
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "4.1.1",

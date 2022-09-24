@@ -15,7 +15,7 @@ const STATE = {
     transitionPeriod: 30000,
     intervals: [] },
 
-  moods: ['friendly', 'suspicious', 'boastful'],
+  moods: ['Plan B comments', 'Plan B help', 'Plan B tutorial'],
   currentMood: '',
   chatbotMessageIndex: 0,
   nLetterSets: 4 };
@@ -38,13 +38,13 @@ const setChatbotMood = () => {
 const getRandGreeting = () => {
   let rand = 0;
   switch (STATE.currentMood) {
-    case 'friendly':
+    case 'Plan B comments':
       rand = getRand(1, greetings.friendly.length);
       return greetings.friendly[rand - 1];
-    case 'suspicious':
+    case 'Plan B help':
       rand = getRand(1, greetings.suspicious.length);
       return greetings.suspicious[rand - 1];
-    case 'boastful':
+    case 'Plan B tutorial':
       rand = getRand(1, greetings.boastful.length);
       return greetings.boastful[rand - 1];
     default:
@@ -55,13 +55,13 @@ const getRandGreeting = () => {
 const getRandConvo = () => {
   let rand = 0;
   switch (STATE.currentMood) {
-    case 'friendly':
+    case 'Plan B comments':
       rand = getRand(1, convo.friendly.length);
       return convo.friendly[rand - 1];
-    case 'suspicious':
+    case 'Plan B help':
       rand = getRand(1, convo.suspicious.length);
       return convo.suspicious[rand - 1];
-    case 'boastful':
+    case 'Plan B tutorial':
       rand = getRand(1, convo.boastful.length);
       return convo.boastful[rand - 1];
     default:
@@ -479,36 +479,36 @@ window.onfocus = () => resetLetterPool();
 window.onresize = _.throttle(resetLetterPool, 200);
 
 const greetings = {
-  friendly: [
-  "Hiya, pal. I hope you're having a terrific day!",
-  "Good day to you, friend!"],
+  Plan ,B ,comments : [
+  "Hello User , we hope you are having a good website day!",
+  "Vipi mzae , unaendelea aje na wera !"],
 
-  suspicious: [
-  "Hmm, I would introduce myself, but I'm not so sure thats a good idea.",
-  "Hello, how are you? Wait, don't answer that, I have no way of verifying your response!"],
+  Plan ,B  ,help: [
+  "Rada , tupo site ngori ni gani.",
+  "Hello , whats up at work !"],
 
-  boastful: [
-  "Hey, did I mention I am built on JavaScript? Which is the greatest language ever by the way!",
-  "Good day to you. Though I must say that I am having a GREAT day!"] };
+  Plan ,B ,tutorial: [
+  "Hello there are you new , do not worry we gatchu ",
+  "Rada ya madays ,tunaona wewe ni mgeni mtaa , usiworry tutakujulisha za huku !"] };
 
 
 
 const convo = {
-  friendly: [
+  Plan ,B ,comments: [
   "What a great thing you just said. I'm so glad you said it.",
   "Ahh, yes, I agree. It is so great to say things, isn't it?",
   "Please, tell me more. It brings me such joy to respond to the things you say.",
   "Ahh, yes valid point. Or was it? Either way, you're fantastic!",
   "Anyways, did I mention that I hope you're having a great day? If not, I hope it gets better!"],
 
-  suspicious: [
+  Plan ,B ,comments: [
   "I just don't know if I can trust that thing you just said...",
   "Oh, interesting. I totally believe you. (Not really)",
   "Uh-huh, yeah, listen...I'm not going to fully invest in this conversation until I'm certain I know your motive.",
   "Wait, what the heck is that?? Oh, phewf, it's just another rogue letter 'R' that escaped the letter pool.",
   "You can't fool me, I know that's not true!"],
 
-  boastful: [
+  Plan ,B ,comments: [
   "That's interesting. I'll have you know that I have an extremely advanced learning algorithm that analyzes everything you say...well, not really, but I wish.",
   "Hey, while I have you, I should probably tell you that I can respond in 4 seconds flat. Which is pretty fast if you ask me.",
   `Listen, that's neat and all, but look how fast I can calculate this math problem: 12345 * 67890 = ${12345 * 67890}. Didn't even break a sweat.`,
