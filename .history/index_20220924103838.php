@@ -649,7 +649,7 @@ session_start();
           <h2 class="mb-4">Be a part of our growing community of free lancer and Invest in your Job Options.</h2>
           <p>
             <a
-              href="main/database/html/pages/sign-in.php"
+              href="main/database/html/pages/sign-up.php"
               target="_blank"
               class="btn btn-primary text-white py-3 px-4"
               >Log in</a
