@@ -30,6 +30,7 @@ if ($text == "") {
     $response .="4. Electrical repairs";
 }else if($text == "1*2"){
     $response = "END You will receive a response through mail on available jobs.";
+}
 }else if($text = "2*1 "){
     $response = "CON You have entered your phone number kindly enter your new password";
 }else if($text == "2*2"){
