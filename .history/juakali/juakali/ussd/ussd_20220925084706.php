@@ -9,6 +9,8 @@ $text        = $_POST["text"];
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
     $response  = "CON Hello there welcome to plan B Jua Kali artisans. \n";
+    $response .// This is the first request. Note how we start the response with CON
+    $response  = "CON Hello there welcome to plan B Jua Kali artisans. \n";
     $response .= "1. Login Account \n";
     $response .= "2. Change Password";;
 
@@ -31,9 +33,7 @@ if ($text == "") {
 }else if($text = "1*2"){
     $response = "CON Enter your ID Number :";
 }else if($text == "1*3"){
-    $response = "CON You Logged back";
-    $response .="1.3 Login Account";
-    $response .="1.2 Change password";
+    
 }
 
 // Echo the response back to the API

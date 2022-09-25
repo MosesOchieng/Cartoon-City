@@ -10,30 +10,27 @@ if ($text == "") {
     // This is the first request. Note how we start the response with CON
     $response  = "CON Hello there welcome to plan B Jua Kali artisans. \n";
     $response .= "1. Login Account \n";
-    $response .= "2. Change Password";;
+    $response .= "2. Change Password";
 
 } else if ($text == "1") {
     // Business logic for first level response
     $response = "CON Log in with the options below to proceed. \n";
     $response .= "1. Phone Number Login \n";
-    $response .= "2. ID Number Log In \n"; 
+    $response .= "2. ID Number Log In" 
     $response .= "3. Back.";
 
 } else if ($text == "2") {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
-    $response = "CON Enter your phone  number :";
+    $response = "CON Entering your number ";
 
 } else if($text == "1*1") { 
     // This is a second level response where the user selected 1 in the first instance
-    $response  = "CON Enter your password :";
+    $accountNumber  = "ACC1001";
 
-}else if($text = "1*2"){
-    $response = "CON Enter your ID Number :";
-}else if($text == "1*3"){
-    $response = "CON You Logged back";
-    $response .="1.3 Login Account";
-    $response .="1.2 Change password";
+    // This is a terminal request. Note how we start the response with END
+    $response = "END Your account number is ".$accountNumber;
+
 }
 
 // Echo the response back to the API

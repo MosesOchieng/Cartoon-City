@@ -31,9 +31,7 @@ if ($text == "") {
 }else if($text = "1*2"){
     $response = "CON Enter your ID Number :";
 }else if($text == "1*3"){
-    $response = "CON You Logged back";
-    $response .="1.3 Login Account";
-    $response .="1.2 Change password";
+    $response = "You Logged back";
 }
 
 // Echo the response back to the API
