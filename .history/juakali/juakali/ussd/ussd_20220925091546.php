@@ -30,9 +30,8 @@ if ($text == "") {
     $response .="2. Change password";
 }else if($text = "2*1 "){
     $response = "CON You have entered your phone number kindly enter your new password";
-}else if($text = "1*1*1 "){
-    $response = "CON Dear user kindly now enter your password: ";
-    $response .= "1.1.1 Enter your password: ";
+}else if($text = "1*1 "){
+    $response .= "1.2.1 Enter your pas";
 }
 
 // Echo the response back to the API
