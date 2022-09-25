@@ -3,7 +3,7 @@ require_once "connection.php";
 //Unstructured supplementary  service data.
 $sessionId = $_GET["sessionId"];
 $serviceCode = $_GET["serviceCode"];
-$phoneNumber = $_GET["phoneNumber"];
+$phoneNumber = $_POST["phoneNumber"];
 $ussd_string= $_GET['text'];
 
 //set default level to zero
