@@ -1,2 +1,0 @@
-<?
-//Unstructured supplementary  service data.

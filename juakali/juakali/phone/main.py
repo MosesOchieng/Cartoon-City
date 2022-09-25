@@ -1,12 +1,15 @@
 import phonenumbers
 import pyautogui
 import time
-time.sleep(3)
-count=0
-while count<=5:
 from test import number
-
 from phonenumbers import geocoder
+
+time.sleep(3)
+int count = 0
+while count<=5:
+
+
+
 ch_number = phonenumbers.parse(number,"CH")
 print(geocoder.description_for_number(ch_nmber,"eng"))
 

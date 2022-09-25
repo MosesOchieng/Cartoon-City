@@ -1,1 +1,1 @@
-number = input("Enter Phone number")
+number = input("Enter Phone number :")

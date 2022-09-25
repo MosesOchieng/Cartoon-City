@@ -6,6 +6,12 @@ $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
 $text = $_POST["text"];
 
+//setting default level to zero
+$level = 0;
+
+$response = explode("*",$text);
+
+$level = count($response);
 
 if($text == ""){
     //this is the 1st request (CON)
@@ -25,7 +31,11 @@ if($text == ""){
     $response1 = "2.Back";
 }else if($text == "1*1"){
     //second level response phase
-    $id_number="id";
+    function identer($response){
+        echo "CON $response";
+    }
+    $response = "Please enter your ID number to proceed:";
+    identer($response);
     //entering id number
     $response = "Hello" .$name."of".$id_number."you will be redirected to the job page";
     
@@ -39,8 +49,17 @@ if($text == ""){
     $response1 = "2. Change password";
 }else if($text == "2*1"){
     $response = "Hello enter your password below";
-    $changePass ="new";
+    
     //changing to new password after number verification.
+    function register($cpPassword){
+        if(count($cpPassword) == 2){
+            $response = "Enter your new password: ";
+            function ussd_proceed($response){
+                echo "CON $response";
+            }
+            ussd_proceed($response);//asking individual to input password.
+        }
+    }
 
 }
 // echo of response to server api .response depends on statement filled after each section.
