@@ -16,26 +16,25 @@ if ($text == "") {
     // Business logic for first level response
     $response = "CON Log in with the options below to proceed. \n";
     $response .= "1. Phone Number Login \n";
-    $response .= "2. ID Number Log In  \n";
-    $response .="3. Back"; 
+    $response .= "2. ID Number Log In  \n"; 
     
-} else if ($text == "1*1") {
+} else if ($text == "2") {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
     $response = "CON Enter your phone  number :";
+
+} else if($text == "2*1") { 
+    // This is a second level response where the user selected 1 in the first instance
+    $response  = "CON Enter your password :";
+
 }else if($text = "1*2"){
     $response = "CON Enter your ID Number :";
-
 }else if($text == "1*3"){
     $response = "CON You Logged back";
     $response .="1.3 Login Account";
     $response .="1.3 Change password";
-
-}else if($text = "1*1 "){
-    $response = "CON You have entered your phone number kindly enter your password";
-    $response .= "1.1.1 Enter Password.";
-}else if($text = "1*2 "){
-    $response .= "1.2.1 Enter your password";
+}else if($text = "1*2*1"){
+    $response = "CON "
 }
 
 // Echo the response back to the API

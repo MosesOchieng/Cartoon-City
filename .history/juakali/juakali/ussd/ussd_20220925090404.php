@@ -31,12 +31,10 @@ if ($text == "") {
     $response .="1.3 Login Account";
     $response .="1.3 Change password";
 
-}else if($text = "1*1 "){
+}else if($text = "1*1*1"){
     $response = "CON You have entered your phone number kindly enter your password";
-    $response .= "1.1.1 Enter Password.";
-}else if($text = "1*2 "){
-    $response .= "1.2.1 Enter your password";
-}
+    $response .= "1.2.1 Enter Password.";
+}else if($text = "1*2")
 
 // Echo the response back to the API
 header('Content-type: text/plain');
