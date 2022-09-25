@@ -15,13 +15,13 @@ if ($text == "") {
 } else if ($text == "1") {
     // Business logic for first level response
     $response = "CON Log in with the options below to proceed. \n";
-    $response .= "1. Phone Number LOgin";
-    $response .= "2. ID Number Log In";
+    $response .= "1. Phone Number LOgin In";
+    $response .=
 
 } else if ($text == "2") {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
-    $response = "CON Entering your number ";
+    $response = "END Your phone number is ".$phoneNumber;
 
 } else if($text == "1*1") { 
     // This is a second level response where the user selected 1 in the first instance
