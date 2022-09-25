@@ -22,7 +22,7 @@ if ($text == "") {
     $response = "CON Enter your phone number: ";
 } else if ($text == "1*1") {
     $response = "CON Enter your phone  number :";
-}else if($text = "1*2"){
+}else if($text = "1*1"){
     $response = "CON Choose Job Listing";
     $response .="1. Carpenter \n";
     $response .="2. Mason and Plumber \n";
@@ -30,12 +30,7 @@ if ($text == "") {
     $response .="4. Electrical repairs";
 }else if($text = "2*1 "){
     $response = "CON You have entered your phone number kindly enter your new password";
-}else if($text == "2*2"){
-    $response = "END You password is changed successfully.";
-}else if($text == "1*3"){
-    $response = "END You will receive a response through mail on available jobs.";
 }
-
 // Echo the response back to the API
 header('Content-type: text/plain');
 echo $response;
