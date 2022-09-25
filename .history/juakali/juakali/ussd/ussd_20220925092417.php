@@ -32,7 +32,7 @@ if ($text == "") {
     $response = "CON You have entered your phone number kindly enter your new password";
 }else if($text = "1*2 "){
     $response = "CON Dear user kindly now enter your password: ";
-    $response .= "1.2 Enter your password: ";
+    $response .= "1. Enter your password: ";
 }
 
 // Echo the response back to the API

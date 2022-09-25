@@ -24,15 +24,15 @@ if ($text == "") {
     $response = "CON Enter your phone  number :";
 }else if($text = "1*1"){
     $response = "CON Enter your ID Number :";
-}else if($text == "1*1"){
+}else if($text == "1*3"){
     $response = "CON You Logged back";
     $response .="1. Login Account";
     $response .="2. Change password";
 }else if($text = "2*1 "){
     $response = "CON You have entered your phone number kindly enter your new password";
-}else if($text = "1*2 "){
+}else if($text = "1*1*1 "){
     $response = "CON Dear user kindly now enter your password: ";
-    $response .= "1.2 Enter your password: ";
+    $response .= "1.1.1 Enter your password: ";
 }
 
 // Echo the response back to the API
