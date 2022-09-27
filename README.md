@@ -1,5 +1,8 @@
 # Plan B
 
+Video on app presentation and project about is in the tutorial folder.
+Video on ussd workings is in the tutorials folder.
+
 Website application Deployment link
 
 https://planbapplication.herokuapp.com/
@@ -33,7 +36,35 @@ Mongoose for saving job notifications and mongodb for user registrations and log
 Front end ; javascript , HTML (frontend form validation.),website structure., HTML5 (PUG), SCSS , Bootstrap , Sass , CSS, CSS5 .
 
 Backend ;PHP,(collecting and validating forms data(backend security),sending data to the lampp database)PHP COOKIES ,
+PHP GOOGLE*Technologies used
+
+~ Programming Languages
+
+Front end ; javascript , HTML (frontend form validation.),website structure., HTML5 (PUG), SCSS , Bootstrap , Sass , CSS, CSS5 .
+
+Backend ;PHP,(collecting and validating forms data(backend security),sending data to the lampp database)PHP COOKIES ,
 PHP GOOGLE RECAPTCHA ~ to enhance the security of the login pages., (PHPMAILER)for sending email verification links to emails for newly registered users to authenticate their registration.,
+ Python;(Libraries -,phone numbers,config,pyautogui, Beautiful soap, requests, url ) for
+(Web scrapping websites)and feeding them to the application , Pyschript for connecting to html dashboard page and enabling python run on html.Python test files to show the backend website scrapping.
+Firebase cloud ,database.
+
+Images ; Unsplash Images.
+
+API's ; Form spree for communications.
+
+Website Structure
+
+Main file contains the index.html and supporting folders and files to give the homepage which is informational on what the website application really does.
+
+The folder Dashboard contains the users Dashboard that the user will be able to use once they have signed up and paid for the premium plans.
+
+The folder main contains the support to clients and also the database which contains the premium files and the sign up.
+
+The folder scrapper contains the individual python files that enable the scrapping.
+Jua Kali folder contains the Jua Kali folder details with clients and artisans information.
+USSD Logins to Jua Kali users with ussd.php files.
+Jua Kali has a separate login and the backedn is built in firebase .
+They have a chat app and the concept behind it using geolocator and phone numbers to connect jua kali artisans to potential clients. RECAPTCHA ~ to enhance the security of the login pages., (PHPMAILER)for sending email verification links to emails for newly registered users to authenticate their registration.,
  Python;(Libraries -,phone numbers,config,pyautogui, Beautiful soap, requests, url ) for
 (Web scrapping websites)and feeding them to the application , Pyschript for connecting to html dashboard page and enabling python run on html.Python test files to show the backend website scrapping.
 Firebase cloud ,database.
