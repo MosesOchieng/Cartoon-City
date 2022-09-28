@@ -19,7 +19,7 @@ The site also allows its users to user softwares they would need like Grammerly 
 
 Website is divided into frontend where the user interacts first with the homepage that is informational and offers instruction to the user on how to navigate the website.
 Concepts applied :
-~ Africa's Talking website API for usssd registration for Jua Kali artisans.
+~ Africa's Talking website API for ussd registration for Jua Kali artisans.
 ~ MPESA DARAJA for Lipa Na Mpesa Integration to pay for premium plans as a registered user.
 ~ Web scrapping with python to enable pulling of job notifications.
 ~csv to save the information scrapped

@@ -1,18 +1,20 @@
+# Program to find carrier and region
+# of a phone number
 import phonenumbers
-import pyautogui
-import time
-from test import number
-from phonenumbers import geocoder
+from phonenumbers import geocoder, carrier
 
-time.sleep(3)
-int count = 0
-while count<=5:
+# Parsing String to Phone number
+phoneNumber = input("Enter your phone number starting with country code:")
 
 
+inphonenumber = phonenumbers.parse(phoneNumber)
 
-ch_number = phonenumbers.parse(number,"CH")
-print(geocoder.description_for_number(ch_nmber,"eng"))
+# Getting carrier of a phone number
+Carrier = carrier.name_for_number(inphonenumber, 'en')
 
-from phonenumbers import carrier
-service_nmber = phonenumbers.parse(number,"RO")
-print(carrier.name_for_number(service_nmber,"eng"))
+# Getting region information
+Region = geocoder.description_for_number(inphonenumber, 'en')
+
+# Printing the carrier and region of a phone number
+print(Carrier)
+print(Region)
