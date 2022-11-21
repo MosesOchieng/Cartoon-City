@@ -1,0 +1,1 @@
+number = inpft("Enter Phone number :")

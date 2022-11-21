@@ -53,7 +53,7 @@ session_start();
               <li><a href="#companies">Job Sites </a></li>
               <li><a href="#details">About</a></li>
               <li><a href="#prof">Professionals</a></li>
-              <li><a href="jua/dist/index.html">Jua Kali.</a></li>
+              <li><a href="jua kali/index.php">Jua Kali.</a></li>
             </ul>
 
             <a
@@ -83,7 +83,7 @@ session_start();
           class="img overlay"
           style="background-image: url('images/nikita.jpg')"
         ></div>
-     
+
       <div
       class="img overlay"
       style="background-image: url('images/kal.jpg')"
@@ -104,9 +104,9 @@ session_start();
               <input
                 type="text"
                 class="form-control px-4"
-                placeholder="services"
+                placeholder="Post  a Jua Kali Job by clicking on the button post."
               />
-              <button type="submit" class="btn btn-primary">Jobs</button>
+              <button type="submit" class="btn btn-primary">Post</button>
             </form>
           </div>
         </div>
@@ -136,7 +136,7 @@ session_start();
           <div class="col-12">
             <div class="property-slider-wrap">
               <div class="property-slider">
-              
+
 
 
                 <div class="property-item">
@@ -145,12 +145,13 @@ session_start();
                   </a>
 
                   <div class="property-content">
-                  
+
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >Remote works</span
                       >
                       <span class="city d-block mb-3">Pin your Location for clients that would need hybrid employments.</span>
+
 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
@@ -158,7 +159,7 @@ session_start();
                           <span class="caption">Stand out in Hybrid jobs with your locations</span>
                         </span>
                         <span class="d-block d-flex align-items-center">
-                    
+
                         </span>
                       </div>
 
@@ -178,7 +179,7 @@ session_start();
                   </a>
 
                   <div class="property-content">
-                    
+
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >Remote Desktop Environment</span
@@ -191,7 +192,7 @@ session_start();
                           <span class="caption">Work with no hustle </span>
                         </span>
                         <span class="d-block d-flex align-items-center">
-                         
+
                         </span>
                       </div>
 
@@ -211,7 +212,7 @@ session_start();
                   </a>
 
                   <div class="property-content">
-                    
+
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >Real Time Notifications and job schedules</span
@@ -224,7 +225,7 @@ session_start();
                           <span class="caption">Chapa Kazi</span>
                         </span>
                         <span class="d-block d-flex align-items-center">
-                          
+
                         </span>
                       </div>
 
@@ -244,7 +245,7 @@ session_start();
                   </a>
 
                   <div class="property-content">
-                  
+
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >International Companies</span
@@ -257,7 +258,7 @@ session_start();
                           <span class="caption">International Hires</span>
                         </span>
                         <span class="d-block d-flex align-items-center">
-                         
+
                         </span>
                       </div>
 
@@ -277,7 +278,7 @@ session_start();
                   </a>
 
                   <div class="property-content">
-                    
+
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >Individual Clients</span
@@ -290,7 +291,7 @@ session_start();
                           <span class="caption">Contact Details</span>
                         </span>
                         <span class="d-block d-flex align-items-center">
-                         
+
                         </span>
                       </div>
 
@@ -310,7 +311,7 @@ session_start();
                   </a>
 
                   <div class="property-content">
-                 
+
                     <div>
                       <span class="d-block mb-2 text-black-50"
                         >Work as a Company</span
@@ -323,7 +324,7 @@ session_start();
                           <span class="caption">Create Now</span>
                         </span>
                         <span class="d-block d-flex align-items-center">
-                         
+
                         </span>
                       </div>
 
@@ -499,7 +500,7 @@ session_start();
                 <h3 class="h5 text-primary mb-4">Free Lancer</h3>
                 <blockquote>
                   <p>
-                    Freelancer is an Australian freelance marketplace website, which allows potential employers to post jobs that freelancers can then bid to complete. Founded in 2009, its headquarters is located in Sydney, Australia, though it also has offices in Vancouver, London, Buenos Aires, Manila, and Jakarta. 
+                    Freelancer is an Australian freelance marketplace website, which allows potential employers to post jobs that freelancers can then bid to complete. Founded in 2009, its headquarters is located in Sydney, Australia, though it also has offices in Vancouver, London, Buenos Aires, Manila, and Jakarta.
                   </p>
                 </blockquote>
                 <p class="text-black-50">Connect Process</p>
@@ -523,7 +524,7 @@ session_start();
                 <h3 class="h5 text-primary mb-4">Fiver</h3>
                 <blockquote>
                   <p>
-                    Fiverr is a global online marketplace for freelance services. Fiverr’s platform connects freelancers to people or businesses looking to hire
+                  Fiver offers different free lancer the ability to work when they receive real time notifications from other sites.
                   </p>
                 </blockquote>
                 <p class="text-black-50">Connect Process</p>
@@ -669,7 +670,7 @@ session_start();
               Board Of Directors.
             </h2>
             <p class="text-black-50">
-              Founder and Co-Founders for Plan B who also serve as Software Engineers in the company.They worked towards the writing for code and also helped in starting up the Software in 2022. 
+              Founder and Co-Founders for Plan B who also serve as Software Engineers in the company.They worked towards the writing for code and also helped in starting up the Software in 2022.
             </p>
           </div>
         </div>
@@ -853,7 +854,7 @@ session_start();
 
         <div class="row mt-5">
           <div class="col-12 text-center">
-     
+
 
             <p>
               Copyright &copy;
@@ -862,9 +863,9 @@ session_start();
               </script>
               . All Rights Reserved. &mdash;
               <a href="#">Kiot@ Decentralized Autonomous Organization.</a>
-             
+
             </p>
-           
+
           </div>
         </div>
       </div>

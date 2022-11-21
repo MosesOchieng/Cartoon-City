@@ -2,7 +2,7 @@
 session_start();
 require_once ("public/lampp/connection.php");
 if(isset($_SESSION['myprefix-'])!="submit") {
-    header("Location: ../redirect.php");
+    header("Location:pricing.php");
 }
 require ("up.php");
 require("login.php");
@@ -12,21 +12,18 @@ if (isset($_GET['submit'])) {
 $email = mysqli_real_escape_string($conn, $_GET['email']);
 
 $password = mysqli_real_escape_string($conn, $_GET['password']);
-$cpassword = mysqli_real_escape_string($conn, $_GET['cppass']); 
-
+$cpassword = mysqli_real_escape_string($conn, $_GET['cppass']);
+}
 if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
 $email_error = "Please Enter Valid Email ID";
 }
 if(strlen($password) < 6) {
 $password_error = "Password must be minimum of 6 characters";
-}       
+}
 
 if($password != $cpassword) {
 $cpassword_error = "Password and Confirm Password doesn't match";
 }
-mysqli_close($conn);
-}
-
 
 if(isset($_GET['submit']) && $_GET['g-recaptcha-response']!="")
 {
@@ -46,5 +43,6 @@ mysqli_query($conn, "INSERT INTO planBdb(email ,conf pass, pass) VALUES('" . $_G
 echo "User registration form with captcha validation has been successfully saved";
 }
 }
+mysqli_close($conn);
 exit();
 ?>
