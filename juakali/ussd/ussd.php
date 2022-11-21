@@ -30,12 +30,7 @@ if ($text == "") {
 }else if(text == "3"){
   $response = "END Hello there";
 
-
-}else if ($text == "1*1") {
-    $response = "CON Enter your phone  number :";
-
-
-}else if($text == "1*1*0"){
+}else if($text == "1*1"){
     $response = "CON Choose Job Listing \n";
     $response .="1. Carpenter \n";
     $response .="2. Mason and Plumber \n";
