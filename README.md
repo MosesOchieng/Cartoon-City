@@ -3,6 +3,9 @@
 Video on app presentation and project about is in the tutorial folder.
 Video on ussd workings is in the tutorials folder.
 
+Presenter : Moses Ochieng.
+
+
 Website application Deployment link
 
 https://planbapplication.herokuapp.com/
