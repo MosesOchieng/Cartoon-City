@@ -13,8 +13,8 @@ if ($text == "") {
     $response  = "CON Hello there welcome to Plan B Jua Kali artisans. \n";
     $response .= "1. Find JuaKali Artisans \n";
     $response .= "2. Find A JuaKali Job. \n";
-    $response .= "Report a case. \n";
-    $response .= "3. About Plan B Jua Kali.";
+    $response .= "3. Report a case. \n";
+    $response .= "4. About Plan B Jua Kali.";
 
 } else if ($text == "1") {
     // Business logic for first level response
@@ -22,27 +22,33 @@ if ($text == "") {
     $response .= "1. Immediately available \n";
     $response .= "2. Later avaialable \n";
     $response .= "3. Connect to previous artisan. \n";
-    $response .="3. Back";
+    $response .= "4. Back";
 
 }else if($text == "2"){
-    $response = "CON Enter your phone  number: \n";
+  $response = "CON Enter your phone  number: \n";
+
+}else if(text == "3"){
+  $case = "Link will be sent through sms to report your case"
+  $response = "END Hello there".$case;
 
 
-} else if ($text == "1*1") {
+}else if ($text == "1*1") {
     $response = "CON Enter your phone  number :";
 
-}else if($text == "2*0"){
-  $response = "CON "
 
-}else if($text == "1*0"){
+}else if($text == "1*1*0"){
     $response = "CON Choose Job Listing \n";
     $response .="1. Carpenter \n";
     $response .="2. Mason and Plumber \n";
     $response .="3. Fisherman \n";
     $response .="4. Electrical repairs";
 
-}else if($text == "1*3"){
-    $response = "END You will receive a response through text on available jobs.";
+}else if($text == "3*1"){
+    $store = "";
+    $response = "END  You last client is ".$store;
+}else if($text == "4*1"){
+  $about = "Plan B is a software that enables job searching juakali artisans to find jobs closest to them.";
+
 }
 
 // Echo the response back to the API
