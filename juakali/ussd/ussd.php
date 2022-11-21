@@ -1,7 +1,7 @@
 <?php
 
 
-require("connection.php");
+
 // Read the variables sent via POST from our API
 $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["sessionCode"];
@@ -28,8 +28,7 @@ if ($text == "") {
   $response = "CON Enter your phone  number: \n";
 
 }else if(text == "3"){
-  $case = "Link will be sent through sms to report your case"
-  $response = "END Hello there".$case;
+  $response = "END Hello there";
 
 
 }else if ($text == "1*1") {
