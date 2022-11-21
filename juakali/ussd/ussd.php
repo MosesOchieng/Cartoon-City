@@ -27,7 +27,7 @@ if ($text == "") {
 }else if($text == "2"){
   $response = "CON Enter your phone  number: \n";
 
-}else if(text == "3"){
+}else if($text == "3"){
   $response = "END Hello there";
 
 }else if($text == "1*1"){
