@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+.badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: "Nunito", sans-serif;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in-out;
+  background-image: url("https://assets.codepen.io/4826739/MicrosoftTeams-image+%281%29.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile:hover {
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+  cursor: context-menu;
+}
+.profile:hover::before {
+  opacity: 1;
+}
+
+.ig {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #f56040;
+  -webkit-box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+
+.ig:hover {
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+  transform: rotatez(-10deg);
+}
+.ig:hover::before {
+  opacity: 1;
+}
+
+.ig::before {
+  position: absolute;
+  right: 60px;
+  color: white;
+  content: "Instagram";
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background: black;
+  padding: 5px 10px;
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+}
+
+.blog {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: black;
+  -webkit-box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+
+.blog:hover {
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+  transform: rotatez(-10deg);
+}
+.blog:hover::before {
+  opacity: 1;
+}
+
+.blog::before {
+  position: absolute;
+  right: 60px;
+  color: white;
+  content: "Github";
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background: black;
+  padding: 5px 10px;
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+}
+
+.tw {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #1da1f2;
+  -webkit-box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+
+.tw:hover {
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+  transform: rotatez(-10deg);
+}
+.tw:hover::before {
+  opacity: 1;
+}
+
+.tw::before {
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+  position: absolute;
+  right: 60px;
+  color: white;
+  content: "Twitter";
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background: black;
+  padding: 5px 10px;
+}
+
+.li {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #1da1f2;
+  -webkit-box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 14px -2px rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in-out;
+}
+
+.li:hover {
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+  transform: rotatez(-10deg);
+}
+.li:hover::before {
+  opacity: 1;
+}
+
+.li::before {
+  position: absolute;
+  right: 60px;
+  color: white;
+  content: "LinkedIn";
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background: black;
+  padding: 5px 10px;
+  -webkit-box-shadow: 1px 1px 14px -2px #000000;
+  box-shadow: 1px 1px 14px -2px #000000;
+}
+
+.margin {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 25px;
+  fill: white;
+}
+
+@media only screen and (max-height: 350px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .margin {
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  .profile::before,
+.ig::before,
+.tw::before,
+.li::before,
+.blog::before {
+    right: 0px;
+    top: -40px;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview {
+  display: grid;
+  height: 600px;
+  width: 1024px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.1fr;
+  background-color: #040404;
+  color: #FFFFFF;
+  border: 10px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 7px 26px 2px rgba(0, 0, 0, 0.53);
+  box-shadow: 4px 7px 26px 2px rgba(0, 0, 0, 0.53);
+}
+
+.tile {
+  background: black;
+  background: linear-gradient(157deg, black 0%, #242424 100%);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 1s;
+}
+.tile h2 {
+  cursor: pointer;
+}
+
+.icosvg {
+  height: 70px;
+  width: 70px;
+  fill: white;
+  transform: translatey(20px);
+  cursor: pointer;
+}
+
+.active {
+  background: linear-gradient(157deg, #823918 0%, #e96a2f 100%);
+}
+
+.w1x1 {
+  grid-column: span 1;
+}
+
+.w1x2 {
+  grid-column: span 2;
+}
+
+.w1x3 {
+  grid-column: span 3;
+}
+
+.w1x4 {
+  grid-column: span 4;
+}
+
+.inner-1x {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.inner-2x {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inner-3x {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.accent-text {
+  color: #d05a24;
+}
+
+.footer {
+  grid-column: span 4;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #d05a24;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-orange {
+  background: linear-gradient(157deg, #9d6916 0%, #ffa91f 100%);
+  color: #FFFFFF;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-blue {
+  background: linear-gradient(157deg, #829c96 0%, #bbe4db 100%);
+  color: #FFFFFF;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-red {
+  background: linear-gradient(157deg, #983122 0%, #ff4e33 100%);
+  color: #FFFFFF;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-white {
+  background: #FFFFFF;
+  color: #040404;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+}
+
+.icons {
+  flex: 1;
+}
+
+.icon-bottom {
+  fill: #d05a24;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+}

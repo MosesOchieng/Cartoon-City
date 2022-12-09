@@ -1,3 +1,32 @@
+<?php
+  session_start();
+  error_reporting(0);
+  include 'connection.php';
+  if($_SESSION['U_TYPE']!=''){
+    $_SESSION['U_TYPE']='';
+    session_destroy();
+  }
+  if(isset($_POST['submit'])){
+    session_start();
+    $uname=$_POST['uname'];
+    $password=$_POST['password'];
+
+    $query="SELECT * FROM `user` WHERE `user_name`='$uname' AND `user_password`='$password'";
+    $result=mysqli_query($con,$query);
+    if(mysqli_num_rows($result) == 1){
+     while($row=mysqli_fetch_assoc($result)){
+        $_SESSION['U_TYPE']="USER";
+        $_SESSION['U_ID']=$row['user_id'];
+        $_SESSION['U_NAME']=$row['user_name'];
+      }
+      echo "<script type='text/javascript'> document.location ='index.php'; </script>";
+    }
+    else{
+      echo "<script>alert('Your Credential Details are invalid.Please Try Again!');</script>";
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -12,27 +41,27 @@
 <div class="form">
 
       <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
+        <li class="tab active"><a href="#signup">Jiandikishe</a></li>
+        <li class="tab"><a href="#login">Ingia</a></li>
       </ul>
 
       <div class="tab-content">
         <div id="signup">
-          <h1>Sign Up</h1>
-  
-          <form action="server.php" method="post">
+          <h1>Jiandikishe Plan B</h1>
+
+          <form action="connection.php" method="post">
 
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                First Name<span class="req">*</span>
+                Jina la Kwanza<span class="req">*</span>
               </label>
               <input type="text" required autocomplete="off" />
             </div>
 
             <div class="field-wrap">
               <label>
-                Last Name<span class="req">*</span>
+             Jina la Mwisho<span class="req">*</span>
               </label>
               <input type="text"required autocomplete="off"/>
             </div>
@@ -40,49 +69,49 @@
 
           <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Barua Pepe<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
-              Set A Password<span class="req">*</span>
+              Neno lako la siri<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
 
-          <button type="submit" class="button button-block"/>Get Started</button>
+          <button type="submit" class="button button-block"/>Jiandikishe</button>
 
           </form>
 
       </div>
       <div id="login">
-          <h1>Welcome Bck!</h1>
-          <?php include('errors.php'); ?>
-          <form action="/" method="post">
+          <h1>Karibu Plan B  Jua Kali !</h1>
+
+          <form action="server.php" method="post">
 
             <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Barua Pepe<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
-              Password<span class="req">*</span>
+              Neno la siri<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
 
 
-          <button class="button button-block"/>Log In</button>
+          <button class="button button-block"/>Ingia</button>
 
           </form>
 
         </div>
-
+</div>
       </div><!-- tab-content -->
 
 </div> <!-- /form -->

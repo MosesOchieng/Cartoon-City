@@ -16,13 +16,13 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.dreamhost.com';                  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'contact@example.com';             // SMTP username
+    $mail->Username = 'Plan B';             // SMTP username
     $mail->Password = 'secret';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption, TLS also accepted with port 465
     $mail->Port = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('contact@example.com', 'Mailer');          //This is the email your form sends From
+    $mail->setFrom('planb@proton.me', 'Mailer');          //This is the email your form sends From
     $mail->addAddress('recipient@dreamhost.com', 'Joe User'); // Add a recipient address
     //$mail->addAddress('contact@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
@@ -35,8 +35,8 @@ try {
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Subject line goes here';
-    $mail->Body    = 'Body text goes here';
+    $mail->Subject = 'Registration succesful';
+    $mail->Body    = 'Hello Dear User .We have received you details want you to confirm your details by clicking in the link below.';
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

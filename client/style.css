@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+main {
+  background-color: #233d4d;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: "Commissioner", sans-serif;
+}
+main .slide-one {
+  width: 80%;
+  color: white;
+  display: flex;
+  height: 100%;
+  transition: 1s;
+}
+main .slide-one.slide-move {
+  transform: translateX(25%);
+}
+main .slide-one .message {
+  flex: auto;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  transition: transform 0.5s, opacity 0.8s;
+}
+main .slide-one .message .message-caption {
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+main .slide-one .message .btn-enter {
+  width: clamp(1rem, 80%, 300px);
+  height: clamp(2rem, 8vh, 80px);
+  font-size: 1.2rem;
+  background: #fe7f2d;
+  color: white;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+main .slide-one .message .btn-enter:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 20px #fe7f2d8c;
+}
+main .slide-one .message h1 {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: clamp(32px, 4vw, 46px);
+}
+main .slide-one .message p {
+  line-height: 2rem;
+}
+main .slide-two {
+  position: absolute;
+  background: #fdfffc;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  overflow: hidden;
+  transition: right 0.8s ease-out;
+}
+main .slide-two.slide-move {
+  right: 40%;
+}
+main .slide-two .form-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .slide-two .form-wrapper {
+  position: absolute;
+  inset: 6vh 10vw;
+  margin: auto;
+}
+main .slide-two .form-wrapper .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+main .slide-two .form-wrapper .header h1 {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: clamp(32px, 4vw, 46px);
+  color: #fe7f2d;
+}
+main .slide-two .form-wrapper .header nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+main .slide-two .form-wrapper .header nav .menu-item {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .slide-two .form-wrapper .header nav .menu-item svg {
+  fill: #233d4d;
+}
+main .slide-two .form-wrapper .header nav .menu-item:hover > svg {
+  fill: #fe7f2d;
+}
+main .slide-two .form-wrapper .input-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr) 12vh;
+  gap: 12px;
+}
+main .slide-two .form-wrapper .input-group .input {
+  display: grid;
+  align-content: end;
+}
+main .slide-two .form-wrapper .input-group .input.forget-password-input {
+  place-items: center;
+}
+main .slide-two .form-wrapper .input-group .input > .forget-link {
+  text-decoration: none;
+  color: #233d4d;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+main .slide-two .form-wrapper .input-group .input label {
+  color: darkgray;
+}
+main .slide-two .form-wrapper .input-group .input input {
+  outline: none;
+  border: 1px solid transparent;
+  border-bottom: 1px solid darkgray;
+  height: 3rem;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 1rem;
+}
+main .slide-two .form-wrapper .input-group .button-input {
+  place-items: center;
+}
+main .slide-two .form-wrapper .input-group .button-input > button {
+  width: clamp(1rem, 80%, 300px);
+  height: clamp(2rem, 8vh, 80px);
+  font-size: 1.2rem;
+  background: #fe7f2d;
+  color: white;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+main .slide-two .form-wrapper .input-group .button-input > button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 20px #fe7f2d8c;
+}
+main .slide-two .form-wrapper-one,
+main .slide-two .form-wrapper-two {
+  transition: transform 0.8s, opacity 1.4s;
+}
+main .slide-two .form-wrapper-one.form-wrapper-hidden {
+  transform: translateX(200vw);
+  opacity: 0;
+}
+main .slide-two .form-wrapper-two.form-wrapper-hidden {
+  transform: translateX(-200vw);
+  opacity: 0;
+}

@@ -1,0 +1,48 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.loadingContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: greenyellow;
+  background-color: darkslateblue;
+  width: 420px;
+  padding: 10px 0 10px 0;
+  border: 5px solid greenyellow;
+  border-radius: 25px;
+}
+.loadingTitle{
+  width: 100%;
+  text-align: center;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 2em;
+  font-weight: 700;
+}
+.loadingAnimate{
+  text-align: center;
+  text-align: center;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.loadingAnimate::after{
+  content: "";
+  animation: animateDot 2s infinite;
+}
+@keyframes animateDot{
+  from{content: " ";}
+  33%{content: " .";}
+  66%{content: " . .";}
+  to{content: " . . .";}
+}

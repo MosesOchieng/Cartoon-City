@@ -1,0 +1,979 @@
+:root {
+	--background: #79796a;
+	--phone-background: #000;
+	--border-background: #868695;
+	--border-buttons-background: #353526;
+	--camera-background: #868695;
+	--camera-lens-background: #20202f;
+	--detectors-light-background: #dbdbea;
+	--detectors-motion-background: #d90000;
+	--speaker-background: repeating-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 2%, rgba(255,255,255,0) 4%), repeating-linear-gradient(315deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 2%, rgba(255,255,255,0) 4%);
+	--screen-background: #004c9a;
+	--logo-background: url("https://zgrajsie.com/codepen/smartphone/img/zgraj sie.jpg") center no-repeat;
+	--statusbar-background: #0d203d;
+	--icon1-background: url("https://zgrajsie.com/codepen/smartphone/img/cloud.svg") center no-repeat;
+	--icon2-background: url("https://zgrajsie.com/codepen/smartphone/img/ipko.svg") center no-repeat;
+	--icon3-background: url("https://zgrajsie.com/codepen/smartphone/img/pin.svg") center no-repeat;
+	--nfc-background: url("https://zgrajsie.com/codepen/smartphone/img/nfc.svg") center no-repeat;
+	--wifi-background: url("https://zgrajsie.com/codepen/smartphone/img/wifi.svg") center no-repeat;
+	--coverage-background: url("https://zgrajsie.com/codepen/smartphone/img/coverage.svg") center no-repeat;
+	--battery-background: url("https://zgrajsie.com/codepen/smartphone/img/battery.svg") center no-repeat;
+  --volumebar-music: url("https://zgrajsie.com/codepen/smartphone/img/music.svg") center no-repeat;
+  --volumebar-nomusic: url("https://zgrajsie.com/codepen/smartphone/img/nomusic.svg") center no-repeat;
+  --volumebar-sound: url("https://zgrajsie.com/codepen/smartphone/img/sound.svg") center no-repeat;
+  --volumebar-nosound: url("https://zgrajsie.com/codepen/smartphone/img/nosound.svg") center no-repeat;
+  --volumebar-notification: url("https://zgrajsie.com/codepen/smartphone/img/notification.svg") center no-repeat;
+  --volumebar-nonotification: url("https://zgrajsie.com/codepen/smartphone/img/nonotification.svg") center no-repeat;
+  --volumebar-touch: url("https://zgrajsie.com/codepen/smartphone/img/touch.svg") center no-repeat;
+  --volumebar-notouch: url("https://zgrajsie.com/codepen/smartphone/img/notouch.svg") center no-repeat;
+  --volumebar-expandsound: url("https://zgrajsie.com/codepen/smartphone/img/expandsound.svg") center no-repeat;
+  --application-app-keyboard-backspace-background: #fff url("https://zgrajsie.com/codepen/smartphone/img/backspace.svg") center no-repeat;
+	--application-app-keyboard-cancel-background: #ff4e37 url("https://zgrajsie.com/codepen/smartphone/img/cancel.svg") center no-repeat;
+	--application-app-keyboard-undo-background: #fff404 url("https://zgrajsie.com/codepen/smartphone/img/undo.svg") center no-repeat;
+	--application-app-keyboard-accept-background: #01f964 url("https://zgrajsie.com/codepen/smartphone/img/accept.svg") center no-repeat;
+	--application-app-money-background: url("https://zgrajsie.com/codepen/smartphone/img/money.svg") center no-repeat;
+	--application-app-settings-background: #00468c;
+	--application-app-settings-creditcard-background: url("https://zgrajsie.com/codepen/smartphone/img/creditcard.svg") center no-repeat;
+	--application-app-settings-pincode-background: url("https://zgrajsie.com/codepen/smartphone/img/pincode.svg") center no-repeat;
+	--application-menu-background: #013789;
+	--application-menu-background-active: #0059b3;
+	--application-menu-terminal-background: url("https://zgrajsie.com/codepen/smartphone/img/terminal.svg") center no-repeat;
+	--application-menu-payment-background: url("https://zgrajsie.com/codepen/smartphone/img/payment.svg") center no-repeat;
+	--application-menu-settings-background: url("https://zgrajsie.com/codepen/smartphone/img/settings.svg") center no-repeat;
+	--application-menu-divider-background: #00bfff;
+	--navigation-background: #fff;
+	--navigation-back-background: url("https://zgrajsie.com/codepen/smartphone/img/back.svg") center no-repeat;
+	--navigation-home-background: url("https://zgrajsie.com/codepen/smartphone/img/home.svg") center no-repeat;
+	--navigation-opened-background: url("https://zgrajsie.com/codepen/smartphone/img/opened.svg") center no-repeat;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: var(--background);
+  font-family: Sans-Serif;
+}
+
+.content {
+	width: 100%;
+	height: 99vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--background);
+}
+
+.phone {
+	width: 14em;
+	height: 29em;
+	background: var(--phone-background);
+	border-radius: 2em;
+	transform: scale(1.25);
+}
+
+.border {
+	position: relative;
+	top: -0.25em;
+	left: -0.25em;
+	width: inherit;
+	height: inherit;
+	background: inherit;
+	border-radius: inherit;
+	border: var(--border-background) solid .3em;
+}
+
+.volume, .volume::before {
+	position: absolute;
+	left: -0.25em;
+	z-index: -1;
+}
+
+.volume::before {
+	border-radius: 2em;
+	width: .5em;
+	height: 3em;
+	background: var(--border-buttons-background);
+  cursor: pointer;
+}
+
+.up::before {
+	content: '';
+	top: 4em;
+}
+
+.down::before {
+	content: '';
+	top: 8em;
+}
+
+.camera, .camera::before {
+	position: absolute;
+	left: 1em;
+	top: .2em;
+}
+
+.camera::before {
+	content: '';
+	width: .8em;
+	height: .8em;
+	background: var(--camera-background);
+	border-radius: 50%;
+}
+
+.lens, .lens::before {
+	position: absolute;
+}
+
+.lens::before {
+	content: '';
+	top: .45em;
+	left: 1.25em;
+	width: .3em;
+	height: .3em;
+	background: var(--camera-lens-background);
+	border-radius: 50%;
+	z-index: 2;
+	opacity: .35;
+}
+
+.detectors {
+	position: absolute;
+}
+
+.light, .light::before {
+	position: absolute;
+}
+
+.light::before {
+	content: '';
+	left: 5em;
+	top: .65em;
+	width: .3em;
+	height: .3em;
+	border-radius: 50%;
+	background: var(--detectors-light-background);
+	opacity: .3;
+}
+
+.motion, .motion::before {
+	position: absolute;
+}
+
+.motion::before {
+	content: '';
+	left: 5.5em;
+	top: .7em;
+	width: .2em;
+	height: .2em;
+	border-radius: 50%;
+	background: var(--detectors-motion-background);
+	opacity: .3;
+}
+
+.speaker, .speaker::before {
+	position: absolute;
+}
+
+.speaker::before {
+	content: '';
+	left: 6em;
+	top: .65em;
+	width: 2em;
+	height: .3em;
+	background: var(--speaker-background);
+	border-radius: 2em;
+	opacity: .3;
+}
+
+.screen {
+	background: var(--screen-background);
+	position: absolute;
+	top: 1.5em;
+	left: .5em;
+	width: 13em;
+	height: 26em;
+	border-radius: .75em;
+}
+
+.logo {
+	position: absolute;
+  top: 27.75em;
+	left: 6.5em;
+	width: 1em;
+	height: 1em;
+	background: var(--logo-background);
+	background-size: 1em 1em;
+	border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo:hover {
+  mix-blend-mode: screen;
+}
+
+.volumebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3em;
+  border-radius: .5em;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 .05em .5em #000;
+  margin: 0;
+  padding: .75em 0 0 1em;
+  display: flex;
+  flex-direction: column;
+  transition: height, transform 100ms ease-in-out;
+  transform: scale(1,0);
+  transform-origin: top;
+}
+
+.volumebar div div {
+  display: flex;
+  align-items: center;
+}
+
+.volumebar div div p {
+  font-size: .55rem;
+  font-family: Roboto;
+  margin: 0;
+}
+
+.expandsound {
+  position: absolute;
+  right: .5em;
+  width: .5em;
+  height: .5em;
+  background: var(--volumebar-expandsound);
+  background-size: .5em .5em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: box-shadow, transform 50ms ease-in-out, background-color 10ms ease-in-out;
+}
+
+.expandsound:hover,
+.expandsound:focus {
+  box-shadow: 0 0 0 .75em #0002;
+  background-color: #0002;
+}
+
+.moresound {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.soundicon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+}
+
+.sound {
+  background: var(--volumebar-nosound);
+  background-size: 1em 1em;
+}
+
+.notification {
+  background: var(--volumebar-nonotification);
+  background-size: 1em 1em;
+}
+
+.touch {
+  background: var(--volumebar-notouch);
+  background-size: 1em 1em;
+}
+
+.music {
+  background: var(--volumebar-nomusic);
+  background-size: 1em 1em;
+}
+
+.volumeslider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70%;
+  height: .15em;
+  background: #CCC;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 3em;
+}
+
+.volumeslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  background: #00a0b6;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  transition: width, height, box-shadow 50ms ease-in-out;
+}
+
+.volumeslider:enabled::-webkit-slider-thumb:hover,
+.volumeslider:enabled::-webkit-slider-thumb:focus {
+  width: 1.25em;
+  height: 1.25em;
+  box-shadow: 0 0 0 .5em #0005;
+}
+
+.volumeslider::-moz-range-thumb {
+  width: 1em;
+  height: 1em;
+  background: #00a0b6;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0;
+  border: none;
+  transition: width, height, box-shadow 50ms ease-in-out;
+}
+
+.volumeslider:enabled::-moz-range-thumb:hover,
+.volumeslider:enabled::-moz-range-thumb:focus {
+  width: 1.25em;
+  height: 1.25em;
+  box-shadow: 0 0 0 .5em #0005;
+}
+
+.volumeslider::-moz-range-progress {
+	background: #00a0b6;
+  border-radius: 3em;
+}
+
+.volumeslider::-ms-fill-upper {
+	background: #00a0b6;
+  border-radius: 3em;
+}
+
+.statusbar {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 1em;
+	background: var(--statusbar-background);
+	border-radius: .75em .75em 0 0;
+}
+
+.i1 {
+	left: .5em;
+	background: var(--icon1-background);
+  margin-left: .25em !important;
+}
+
+.i2 {
+	left: 1.25em;
+	background: var(--icon2-background);
+}
+
+.i3 {
+	left: 2em;
+	background: var(--icon3-background);
+}
+
+.statusright {
+  position: absolute;
+  right: .25em;
+  display: flex;
+  align-items: center;
+}
+
+.procent {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: .5em;
+	font-family: "Roboto";
+	font-weight: 400;
+	color: #fff;
+}
+
+.nfc {
+	background: var(--nfc-background);
+	transform: scale(.9);
+}
+
+.wifi {
+	background: var(--wifi-background);
+}
+
+.coverage {
+	background: var(--coverage-background);
+	transform: scale(.9);
+}
+
+.battery {
+	background: var(--battery-background);
+	transform: scale(1.3);
+}
+
+.time {
+	display: flex;
+	align-items: center;
+	right: .5em;
+	height: 100%;
+	width: 2.5em;
+	font-size: .5em;
+	font-family: "Roboto";
+	font-weight: 400;
+	color: #fff;
+}
+
+.icon {
+	width: 0.5em;
+	height: 1em;
+	filter: invert(100%);
+	background-size: .5em .5em;
+  margin: 0 .15em;
+}
+
+.application {
+	margin-top: 1em;
+	height: 23.5em;
+	overflow: hidden;
+}
+
+.terminal-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(0);
+	transform-origin: left;
+	transition: transform 250ms ease-in-out;
+  position: relative;
+}
+
+.amount {
+	display: block;
+	margin-top: 1em;
+	padding: .25em;
+	background: #fff;
+	text-align: right;
+	width: 80%;
+	border-radius: .5em;
+	font-weight: 400;
+}
+
+.amount > p {
+	position: absolute;
+	top: .25em;
+	border-radius: 1em;
+	background: #e0e0e0;
+	padding-left: .5em;
+	padding-right: .5em;
+  cursor: pointer;
+  transition: background 150ms ease-in-out;
+}
+
+.amount > p:hover {
+  background: #a0a0a0;
+}
+
+.currency {
+  position: absolute;
+  inset: 1em;
+  border-radius: 1em;
+  background: #000080;
+  opacity: .9;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0,0);
+  transition: transform 200ms ease-in-out;
+}
+
+.currency > p {
+  color: #fff;
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
+}
+
+.currency > p:hover {
+  color: #ffd35c;
+}
+
+.keyboard {
+	margin-top: 2em;
+	display: flex;
+	width: 80%;
+	height: 16em;
+	align-items: stretch;
+	justify-content: space-evenly;
+	font-weight: 400;
+}
+
+.keyboard > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.keyboard > div > p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3em;
+	height: 3em;
+	margin: 0;
+	border-radius: 1em;
+	cursor: default;
+  transition: background 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.keyboard > div > p:not(:last-child) {
+	background: #fff;
+}
+
+.keyboard > div > p:not(:last-child):hover {
+	background-color: #e0e0e0 !important;
+}
+
+.backspace {
+  background: var(--application-app-keyboard-backspace-background) !important;
+  background-size: 1em 1em !important;
+}
+
+.cancel {
+	background: var(--application-app-keyboard-cancel-background);
+	background-size: 1em 1em;
+}
+
+.cancel:hover{
+  background-color: #df432f;
+}
+
+.undo {
+	background: var(--application-app-keyboard-undo-background);
+	background-size: 1em 1em;
+}
+
+.undo:hover {
+  background-color: #e0d504;
+}
+
+.accept {
+	background: var(--application-app-keyboard-accept-background);
+	background-size: 1em 1em;
+}
+
+.accept:hover {
+  background-color: #01ce53;
+}
+
+.payment-content {
+	position: relative;
+	bottom: 20em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 20em;
+	transform: scale(1,1);
+	transition: transform 250ms ease-in-out;
+}
+
+.payment-content > p {
+	text-align: center;
+	color: #fff;
+}
+
+.to-payment-content {
+	position: relative;
+	bottom: 40em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 20em;
+	transform: scale(0,0);
+	transform-origin: top;
+	transition: transform 100ms ease-in-out;
+}
+
+.to-payment-content > p {
+	text-align: center;
+	color: #fff;
+}
+
+.to-payment {
+	display: flex;
+	width: 80%;
+	height: 3em;
+	justify-content: space-evenly;
+}
+
+.reject {
+	background: var(--application-app-keyboard-cancel-background);
+	background-size: 1.5em 1em;
+	width: 3em;
+	height: 2em;
+	border-radius: 2em;
+  cursor: pointer;
+}
+
+.reject:hover {
+  background-color: #df432f;
+}
+
+.okay {
+	background: var(--application-app-keyboard-accept-background);
+	background-image: url("https://zgrajsie.com/codepen/smartphone/img/okay.svg");
+	background-size: 1.5em 1em;
+	width: 3em;
+	height: 2em;
+	border-radius: 2em;
+  cursor: pointer;
+}
+
+.okay:hover {
+  background-color: #01ce53;
+}
+
+.no-payment {
+	font-weight: 700;
+}
+
+.money {
+	background: var(--application-app-money-background);
+	background-size: 3em 3em;
+	width: 3em;
+	height: 3em;
+	filter: invert(100%);
+}
+
+.settings-content {
+	position: relative;
+	bottom: 60em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(0);
+	transform-origin: right;
+	transition: transform 250ms ease-in-out;
+}
+
+.settings-content > label {
+	width: 100%;
+}
+
+.creditcard {
+	background: var(--application-app-settings-creditcard-background);
+}
+
+.pincode {
+	background: var(--application-app-settings-pincode-background);
+}
+
+.limit {
+	background: var(--application-menu-payment-background);
+}
+
+.ico {
+	background-size: 2em 1em;
+	width: 2em;
+	height: 1em;
+	filter: invert(100%);
+}
+
+.set {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 3em;
+	width: 100%;
+	margin-top: .1em;
+	background: var(--application-app-settings-background);
+	color: #fff;
+	font-size: .75em;
+  transition: background 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.set:hover {
+  background: #00378c;
+}
+
+.new {
+	position: absolute;
+	top: 1.5em;
+	background: #e0e0e0;
+	border-radius: 1em;
+	width: 90%;
+	height: 15em;
+	z-index: 2;
+	text-align: center;
+	transform: scale(0,0);
+	transition: transform 300ms ease-in-out;
+}
+
+.newcard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+}
+
+.newcard > .label {
+	transition: color 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.newcard > label > span {
+	background: var(--application-app-settings-creditcard-background);
+	background-size: 2em 1em;
+	width: 2em;
+	height: 1em;
+	display: inline-block;
+}
+
+.newcard > label > p {
+	font-size: .75em;
+	display: inline-block;
+}
+
+.newpin {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+}
+
+.newpin > input {
+	text-align: center;
+	width: 4em;
+}
+
+.newamount {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+}
+
+.newamount > div > input {
+	text-align: center;
+	display: inline;
+	width: 7em;
+}
+
+.newamount > div > span {
+	text-align: center;
+	display: inline;
+}
+
+.newlimit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+}
+
+.newlimit > input {
+	text-align: center;
+	width: 5em;
+}
+
+.confirm {
+	margin-top: 1em;
+	font-weight: 700;
+	background: #000;
+	color: #fff;
+	border-radius: 1em;
+	box-shadow: none;
+	padding: .25em 1em .25em 1em;
+  cursor: pointer;
+  transition: opacity 150ms ease-in-out;
+}
+
+.confirm:hover {
+  opacity: .75;
+}
+
+.menu {
+	position: absolute;
+	bottom: 1.5em;
+	width: 100%;
+	height: 2.5em;
+	background: var(--application-menu-background);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+  font-family: Roboto;
+}
+
+.menu > label > div {
+  transition: background 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.menu > label:hover > div {
+  background: #0139b3;
+}
+
+.menuitem {
+	width: 4.25em;
+	height: 2.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.divider {
+	width: .05em;
+	height: 80%;
+	background: var(--application-menu-divider-background);
+	border-radius: 3em;
+	opacity: .5;
+}
+
+.menuitem > div > p {
+	display: block;
+	color: #fff;
+	font-size: .5em;
+	width: inherit;
+	text-align: center;
+	margin: .25em 0 0 0;
+	opacity: .75;
+}
+
+.terminal > div > span {
+	background: var(--application-menu-terminal-background);
+}
+
+.payment > div > span {
+	background: var(--application-menu-payment-background);
+}
+
+.settings > div > span {
+	background: var(--application-menu-settings-background);
+}
+
+.menuitem > div > span {
+	display: block;
+	width: inherit;
+	height: 1.25em;
+	filter: invert(100%);
+	opacity: .75;
+	background-size: 2em 1.25em;
+}
+
+.navigation {
+	position: absolute;
+	bottom: 0;
+	background: var(--navigation-background);
+	width: 100%;
+	height: 1.5em;
+	border-radius: 0 0 .75em .75em;
+	display: flex;
+	justify-content: space-evenly;
+	opacity: .75;
+}
+
+.back {
+	background: var(--navigation-back-background);
+}
+
+.home {
+	background: var(--navigation-home-background);
+}
+
+.opened {
+	background: var(--navigation-opened-background);
+}
+
+.navigation > span {
+	width: 2em;
+	background-size: .75em .75em;
+}
+
+.hidden {
+	display: none;
+}
+
+.radio1:not(:checked) ~ .content > .phone > .border > .screen > .application > .terminal-content {
+	transform: translateX(-100%);
+}
+
+.radio1:checked ~ .content > .phone > .border > .screen > .application > .payment-content {
+	transform-origin: right;
+}
+
+.radio1:checked ~ .content > .phone > .border > .screen > .application > .menu > label > .terminal {
+	background: var(--application-menu-background-active);
+}
+
+.radio2:not(:checked) ~ .content > .phone > .border > .screen > .application > .payment-content {
+	transform: scale(0,1);
+}
+
+.radio2:checked ~ .content > .phone > .border > .screen > .application > .menu > label >  .payment {
+	background: var(--application-menu-background-active);
+}
+
+.radio3:not(:checked) ~ .content > .phone > .border > .screen > .application > .settings-content {
+	transform: translateX(100%);
+}
+
+.radio3:checked ~ .content > .phone > .border > .screen > .application > .payment-content {
+	transform-origin: left;
+}
+
+.radio3:checked ~ .content > .phone > .border > .screen > .application > .menu > label >  .settings {
+	background: var(--application-menu-background-active);
+}
+
+.radio4:checked ~ .content > .phone > .border > .screen > .application > .to-payment-content {
+	transform: scale(1,1);
+	transition: transform 250ms ease-in-out;
+}
+
+.radio4:checked ~ .content > .phone > .border > .screen > .application > .menu > label >  .payment {
+	background: var(--application-menu-background-active);
+}
+
+.checkbox1:not(:checked) ~ .new > .newcard {
+	display: none;
+}
+
+.checkbox2:not(:checked) ~ .new > .newpin {
+	display: none;
+}
+
+.checkbox3:not(:checked) ~ .new > .newamount {
+	display: none;
+}
+
+.checkbox4:not(:checked) ~ .new > .newlimit {
+	display: none;
+}
+
+.checkbox1:checked ~ .new, .checkbox2:checked ~ .new, .checkbox3:checked ~ .new, .checkbox4:checked ~ .new {
+	transform: scale(1,1);
+}
+
+@media screen and (max-width: 500px) {
+  .phone {
+    transform: scale(.6);
+  }
+}
+
+.card1:checked ~ .card1l, .card2:checked ~ .card2l {
+	color: #ff0000;
+}

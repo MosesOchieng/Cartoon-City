@@ -12,7 +12,7 @@ function my_session_start() {
 
 // My session regenerate id function
 function my_session_regenerate_id() {
-    // Call session_create_id() while session is active to 
+    // Call session_create_id() while session is active to
     // make sure collision free.
     if (session_status() != PHP_SESSION_ACTIVE) {
         session_start();
@@ -111,10 +111,10 @@ my_session_regenerate_id();
                     <div class="col-12 col-md-8 col-lg-6 justify-content-center">
                         <div class="card bg-primary shadow-soft border-light p-4">
                             <div class="card-header text-center pb-0">
-                                <h2 class="h4">Plan B -  Sign In</h2>  
+                                <h2 class="h4">Plan B -  Sign In</h2>
                             </div>
                             <div class="card-body">
-                                <form action="public/lampp/redirect.php" class="mt-4" method="GET">
+                                <form action="pricing.php" class="mt-4" method="GET">
                                     <!-- Form -->
                                     <div class="form-group">
                                         <label for="exampleInputIcon3">Your email</label>

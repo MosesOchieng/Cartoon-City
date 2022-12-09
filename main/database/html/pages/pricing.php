@@ -45,7 +45,7 @@
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="../../index.html" class="navbar-brand shadow-soft py-2 px-3 rounded border border-light">
-                                <img src="../../assets/img/brand/dark.svg" alt="Themesberg logo">
+                                <img src="../../assets/img/brand/dark.svg" alt="">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -101,7 +101,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href=" ../redirect.php" class="nav-link" data-toggle="dropdown" >
+                        <a href="dashboard/template/index.php" class="nav-link" data-toggle="dropdown" >
                             <span class="nav-link-inner-text">Support</span>
                             <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
                         </a>
@@ -115,7 +115,7 @@
                                             <span class="small">Examples and guides</span>
                                         </div>
                                     </a>
-                                    <a href=" ../red.php" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                    <a href="contact.html" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
                                         <span class="icon icon-sm icon-secondary"><span class="fas fa-microphone-alt"></span></span>
                                         <div class="ml-4">
                                             <span class="text-dark d-block">Support</span>
@@ -129,8 +129,9 @@
                 </ul>
             </div>
             <div class="d-flex align-items-center">
-                <a href="contact.html" target="_blank" class="btn btn-primary text-secondary mr-3"><i class="far fa-paper-plane mr-2"></i>Contacts Us</a>
-                <a href="#" target="_blank" class="btn btn-primary d-none d-md-inline-block"><i class="fas fa-book"></i> Docs v1.0</a>
+                <a href="t/index.php"  class="btn btn-primary text-secondary mr-3"><i class="far fa-paper-plane mr-2"></i>Proceed to Dashboard</a>
+                <a href="pay/index.php"  class="btn btn-primary d-none d-md-inline-block"><i class="fas fa-book"></i>  Lipa
+            na MPESA.</a>
                 <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -153,13 +154,13 @@
             </div>
         </section>
         <!-- Section -->
-        
+
         <div class="section section-lg pt-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <!-- Pricing Card -->
-                        
+
                         <div class="card bg-primary shadow-inset border-light p-4">
                             <!-- Header -->
                             <header class="card-header shadow-soft text-center border border-light rounded mb-4">
@@ -188,7 +189,7 @@
                         </div>
                         <!-- End of Pricing Card -->
                     </div>
-                
+
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <!-- Pricing Card -->
                         <div class="card bg-primary shadow-inset border-light p-4">
@@ -253,9 +254,8 @@
                 </div>
             </div>
         </div>
-    
-        <p style="text-align: center;"> ~ Those with premium plans have access to softwares that would enable them be able to do free lancing jobs at the best professional enviroment: Grammerly , Cloud technologies paid for , Plagarism checker , automatic virtual mouse clicker for transcription sites.</p>
-        <!-- End of Section -->
+          <p style="text-align: center;"> ~ Those with premium plans have access to softwares that would enable them be able to do free lancing jobs at the best professional enviroment: Grammerly , Cloud technologies paid for , Plagarism checker , automatic virtual mouse clicker for transcription sites.</p>
+<!-- End of Section -->
     </main>
     <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
     <div class="container">

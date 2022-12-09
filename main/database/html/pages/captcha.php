@@ -2,7 +2,7 @@
 session_start();
 require_once ("public/lampp/connection.php");
 if(isset($_SESSION['myprefix-'])!="submit") {
-    header("Location:pricing.php");
+    header("Location:login.php");
 }
 require ("up.php");
 require("login.php");

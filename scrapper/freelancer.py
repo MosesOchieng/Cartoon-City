@@ -15,7 +15,7 @@ def main():
 
     soup = BeautifulSoup(r.content, 'html5lib')
 
-
+"""
     jobs = [] # a list to store the jobs present in an array .
 
     table = soup.find('div' , attrs = {'id' : 'job-sites'})
@@ -36,5 +36,4 @@ def main():
         w.writeheader()
         for job in jobs :
             w.writerow(job)
-
- 
+"""

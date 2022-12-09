@@ -53,7 +53,7 @@ session_start();
               <li><a href="#companies">Job Sites </a></li>
               <li><a href="#details">About</a></li>
               <li><a href="#prof">Professionals</a></li>
-              <li><a href="jua kali/index.php">Jua Kali.</a></li>
+              <li><a href="dir/index.html">Jua Kali login.</a></li>
             </ul>
 
             <a
@@ -96,7 +96,7 @@ session_start();
             <h1 class="heading" data-aos="fade-up">
               Kata simu ,tupo site            </h1>
             <form
-              action="#"
+              action="dir/index.html"
               class="narrow-w form-search d-flex align-items-stretch mb-3"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -106,7 +106,7 @@ session_start();
                 class="form-control px-4"
                 placeholder="Post  a Jua Kali Job by clicking on the button post."
               />
-              <button type="submit" class="btn btn-primary">Post</button>
+              <button type="submit" class="btn btn-primary">Create</button>
             </form>
           </div>
         </div>
@@ -118,16 +118,16 @@ session_start();
         <div class="row mb-5 align-items-center">
           <div class="col-lg-6">
             <h2 class="font-weight-bold text-primary heading">
-              Local Contracts.
+              Connecting Jua Kali Artisans near and far.
             </h2>
           </div>
           <div class="col-lg-6 text-lg-end">
             <p>
               <a
-                href="#"
+                href="dir/index.html"
                 target="_blank"
                 class="btn btn-primary text-white py-3 px-4"
-                >Submit a Job.</a
+                >Get a Job.</a
               >
             </p>
           </div>
@@ -148,15 +148,15 @@ session_start();
 
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >Remote works</span
+                        >Weka Biz on the map.</span
                       >
-                      <span class="city d-block mb-3">Pin your Location for clients that would need hybrid employments.</span>
+                      <span class="city d-block mb-3">Helping you connect your Biz place to people that need your services. </span>
 
 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span ></span>
-                          <span class="caption">Stand out in Hybrid jobs with your locations</span>
+                          <span class="caption">Get yourelf working by connecting your job place to </span>
                         </span>
                         <span class="d-block d-flex align-items-center">
 
@@ -182,7 +182,7 @@ session_start();
 
                     <div>
                       <span class="d-block mb-2 text-black-50"
-                        >Remote Desktop Environment</span
+                        >Connecting Jua Kali artisans to job opportunities </span
                       >
                       <span class="city d-block mb-3">Providing you the ability to work from Anywhere across the world.</span>
 
@@ -418,7 +418,7 @@ session_start();
         <div class="row mb-5 align-items-center">
           <div class="col-md-6">
             <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-              Job Sites to connect
+            Free Lancing bila worry
             </h2>
           </div>
           <div class="col-md-6 text-md-end">
@@ -540,7 +540,7 @@ session_start();
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-5">
             <h2 class="font-weight-bold heading text-primary mb-4">
-              Services Offered
+              Job notifications from applicants accounts.
             </h2>
             <p class="text-black-50">
            Our Software offers you the ability to have all your Free Lancing Sites in one job portal , providing you with notifications and also a management of your jobs..
@@ -561,7 +561,7 @@ session_start();
               <div class="feature-text">
                 <h3 class="heading">All Sites to Your site</h3>
                 <p class="text-black-50">
- Enabling Free lancers find all the jobs i.e Upwork ; Free Lancer ; Guru all shared in one place.
+ Enabling you find all the jobs i.e Brighter Monday , Jobs.com and so may more sites.
                 </p>
               </div>
             </div>
@@ -650,10 +650,10 @@ session_start();
           <h2 class="mb-4">Be a part of our growing community of free lancer and Invest in your Job Options.</h2>
           <p>
             <a
-              href="main/database/html/pages/login.php"
-              target="_blank"
+              href="dir/index.html"
+
               class="btn btn-primary text-white py-3 px-4"
-              >Log in</a
+              >Log in as a Free Lancer.</a
             >
           </p>
         </div>
@@ -716,10 +716,10 @@ session_start();
               />
 
               <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Univer Omoro</a></h2>
-                <span class="meta d-block mb-3">Co-Founder | Software Engineer.</span>
+                <h2 class="mb-0"><a href="#">Susan Kamau</a></h2>
+                <span class="meta d-block mb-3">Co - Founder | Product Developer.</span>
                 <p>
-                  Univer Omoro is a software developer , who also doubles up as the Managing Director to the start-up Plan B.She has other products to her name.
+                Senior Software Engineer .Product Developer and pproduct manager at Plan B.Business Enteprenuer with several co-founded start-ups.
                 </p>
 
                 <ul class="social list-unstyled list-inline dark-hover">
@@ -739,38 +739,7 @@ session_start();
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/woman.png"
-                alt="Image"
-                class="img-fluid"
-              />
 
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Millicent Adhiambo</a></h2>
-                <span class="meta d-block mb-3">Co-Founder | Content Manager & Software Developer.</span>
-                <p>
-                Millicent is a Full Stalk Developer with skills at Database Management  and also doubles up as the Start-ups content manager.
-                </p>
-
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
